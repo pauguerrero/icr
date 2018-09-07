@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<!--[if IE 8]> 				 <html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="ca" > <!--<![endif]-->
+
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width">
+		<title>Institut Cartogràfic de la ReVolta</title>
+		
+		<link href="http://fonts.googleapis.com/css?family=Raleway:100,300,400,700" rel="stylesheet" type="text/css">
+		<link href="http://fonts.googleapis.com/css?family=Lora" rel="stylesheet" type="text/css">
+		
+		<link rel="stylesheet" href="css/foundation.css">
+		
+<!--	<link rel="stylesheet" href="css/normalize.css" title="" type="text/css" media="screen" charset="utf-8"> -->
+		
+<!--		<link rel="stylesheet" href="css/main.css" title="" type="text/css" media="screen" charset="utf-8"> -->
+		<link rel="stylesheet" href="css/icr.css" title="" type="text/css" media="screen" charset="utf-8">
+		
+		<script src="js/vendor/custom.modernizr.js"></script>
+		
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+		
+		<script type="text/javascript">
+		$(document).ready(function(){	
+			$("#ajax-contact-form").submit(function() {
+				var str = $(this).serialize();		
+				$.ajax({
+					type: "POST",
+					url: "contact_form/contact_process.php",
+					data: str,
+					success: function(msg) {
+						// Message Sent - Show the 'Thank You' message and hide the form
+						if(msg == 'OK') {
+							result = '<div class="notification_ok">Missatge enviat. Gr&agrave;cies!</div>';
+							$("#fields").hide();
+						} else {
+							result = msg;
+						}
+						$('#note').html(result);
+					}
+				});
+				return false;
+			});
+
+		});		
+	</script>
+
+<!-- GOOGLE ANALYTICS -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-45110567-1', 'institutcartograficdelarevolta.org');
+  ga('send', 'pageview');
+
+</script>
+<!-- -->
+
+	</head>
+	
+	<body>
+	
+	
+<!-- PORTADA -->
+<div class="background">
+<section id="portada">
+	<a href="#manifest"><h1><span>I</span>nstitut <span>C</span>artogràfic de la <span>R</span>eVolta</h1></a>
+</section>
+</div>
+	 	
+<!-- MANIFEST -->
+
+<section id="manifest">
+	<div class="titol">
+		<div class="row">
+			<div class="large-12 columns">
+	 			<h2>És l'hora de cartografiar una nova Catalunya!</h2>
+	 		</div>
+	 	</div>
+	 	<div class="tick"></div>
+<!--	 	<div class="logo"></div> -->
+	</div>
+	
+	
+	 <div class="fons_1">
+	 	<div class="row">
+	 		<div class="large-12 columns text_1">
+	 			<p>Cal sondejar la nostra societat  i sacsejar-la de soca-rel fins a trobar la base ferma sobre la que construïr de nou un projecte comú.</p>
+				<p>Cal abandonar la fràgil realitat clientelar de la nostra política actual i mostrar com són de ferms els vincles de la lliure col·laboració en el territori de les xarxes socials.</p>
+				<p>L´Institut Cartogràfic de la ReVolta neix amb la vocació d´esdevenir una institució oberta i col·laborativa, accessible a totes les persones que creuen que una altra manera de fer política és possible.</p>
+				<p>Totes les cartografies que s´el·laborin a l´ICR permetran conèixer i fer visible el geotècnic social i la consistència de la nostra cultura política, així com fer el seguiment de la seva evolució al llarg de conflictes i lluites.</p>
+				<p>Volem projectar sobre el nostre imaginari col·lectiu una nova visió del territori. Una re-visió que ens permeti reforçar la volta de la nostra democràcia, fent visible a tothom quins són els autèntics agents polítics de la tranformació: el territori i la ciutadania organitzada que custodia el bé comú.</p>
+				<p><strong>Itziar González Virós</strong></p>
+	 		</div>
+	 	</div>
+	 </div>
+</section>
+	 	
+<!-- PLANOL -->
+
+<section id="planol">
+	<div class="titol">
+		<div class="row">
+	 		<div class="large-12 columns">
+	 			<h2>Invariants territorials i nodes de vincle social</h2>
+	 		</div>
+	 	</div>
+	 	<div class="tick"></div>
+	</div>
+	<div class="fons_2">
+		<div class="row">
+	 		<div class="large-12 columns text_2">
+	 			<img src="img/ICR_01_800x568px.jpg" alt="Invariants Territorials i Nodes de Vincle Social. Escala 1:325.000 Catalunya, 2013. Mapa realitzat per: Institut Cartogràfic de la Revolta. Cartògrafs: Francesc Sánchez, Arnau Boix i Itziar González Virós" />
+	 			<p>Aquesta és una impressió d´una cartografia en continua construcció. Aquí podreu veure  una Catalunya  sense divisions administratives. Hem esborrat comarques i altres linies de poder delegat.</p>
+			<p>El nostre mapa polític de la reVolta a Catalunya només reconeix les <a href="http://www.catpaisatge.net/cat/catalegs_mapa.php">135 unitats de Paisatge</a> amb les que ens hem expressat com a persones arrelades al nostre territori. Les nostres muntanyes i els nostres rius, invariants i perseverants al llarg del temps, esdevenen el marc  majestuós del canvi incessant d´una societat en continua transformació alquímica.</p>
+			<p>En aquest mapa, de moment, hi hem situat els nodes de vincle social de les Assemblees de la <a href="http://afectadosporlahipoteca.com/">PAH  (Plataforma d´afectats per la Hipotèca)</a>, la de <a href="http://educaciopublicasos.wordpress.com/">SOS EDUACIÓ  (Assemblea groga)</a> i les de les l´<a href="http://assemblea.cat/">ANC (Assemblea Nacional de Catalunya)</a>. També, hi hem volgut marcar amb diferent tamany, els nodes d´adhesions al <a href="http://www.procesconstituent.cat/ca/">PC (Procés Constituient)</a>.</p>
+			<p>Observeu que al ser un registre de adhessions  a través d´internet hi ha una més gran dispersió pel territori. Contràriament, les assembles presencials acostumen a aparèixer al llarg de les xarxes viàries i ferroviàries del transport públic.</p>
+			<p>Al llarg dels tres mesos que dura aquesta exposició, l´Institut Cartogràfic de la ReVolta, seguirà situant els nodes de la lluita per la Defensa del nostre Territori, la lluita de la pagesia per la sobirania alimentària i la dels col·lectius que defensen un altre model energètic, entre d´altres.</p>
+			<p>Mireu aquesta cartografia i escolteu la veu de quasi  2 mil·lions de ciutadans  que ja estan construint una nova Catalunya. L´Institut Cartogràfic de Catalunya treballa per a que siguin molts més i està des d´avui al vostre servei. Podeu fer-vos socis i amics <a href="#amics">aquí mateix</a>.</p><p>Podeu veure una impressió en gran format d'aquesta cartografia a la Fundació Palau Centre d'Art, Caldes d'Estrac, dins de l'exposició <em><a href="http://www.fundaciopalau.cat/fundacio-palau/ca/actualitat/fitxa.html?title=%20-%20Inauguraci%C3%B3%20Exposici%C3%B3:%20Jo%20em%20rebel%E2%80%A2lo,%20nosaltres%20existim&html=13229.html">Jo em rebel·lo, nosaltres existim</a></em>, del 12 d'octubre al 14 de desembre de 2013</p>
+	 		</div>
+		</div>
+	</div>
+</section>
+
+<!-- CARTÒGRAFS -->
+
+<section id="cartografs">
+	<div class="titol">
+		<div class="row">
+	 		<div class="large-12 columns">
+	 			<h2>Cartògrafs</h2>
+	 		</div>
+	 	</div>
+	 	<div class="tick"></div>
+	</div>
+	<div class="fons_2 text_3">
+	 	<div class="row">
+	 	
+<!-- Fitxa 1 -->	
+			<div class="small-12 large-6 columns"> 		
+	 			<div class="section-container accordion" data-section="accordion">
+		 			<section>
+			 			<h3 class="title" data-section-title><a href="#"><img class="" src="img/m_Itziar.jpg" /><span>Itziar González Virós</span></a></h3>
+			 			<div class="content" data-section-content>
+				 			<p>Itziar González Virós (Barcelona, 1967), arquitecta. Va obrir despatx professional propi amb el jurament hipocràtic que no faria obra nova i només es dedicaria a la rehabilitació del patrimoni arquitectònic de nuclis vells i del medi rural.</p><p>Va ser professora de l'escola-taller del Centre del Vidre de Barcelona, i fins l'any 2005 en el Departament de Composició Arquitectònica de l'Escola Tècnica Superior d'Arquitectura de Barcelona (UPC).</p><p>Del treball, durant anys, amb nombroses comunitats de veïns de Barcelona va néixer la seva vocació per la mediació en conflictes i la participació ciutadana. Urbanista "per voluntat popular", com li agrada dir a ella, col·labora l'any 2002 amb la plataforma ciutadana <em>Una altra plaça Lesseps és possible</em> i estableix aquí la metodologia per a una posterior especialització en participació ciutadana i urbanisme que li ha permès treballar en nombrosos processos de transformació urbana, que van des del disseny de grans infraestructures a plans d'intervenció integral de barris.</p><p>Va col·laborar també amb el Departament d'Interior de la Generalitat de Catalunya per a la definició de plans integrals de seguretat per a destinacions turístiques. Ha estat regidor electa del Districte de Ciutat Vella de Barcelona entre juny de 2007 fins a maig de 2009.</p><p>Actualment col·labora amb diferents estudis d'urbanisme i arquitectura en matèria de sostenibilitat social, participació, mediació i resolució de conflictes en l'espai públic. El seu últim eix de treball se centra en l'estudi de propostes per a la rehabilitació del territori i la deconstrucció i el reciclatge de polígons i urbanitzacions en desús.</p>
+				 		</div>
+				 	</section>
+	 			</div>
+			</div>
+<!-- Fitxa 2 -->	 
+			<div class="small-12 large-6 columns"> 		
+	 			<div class="section-container accordion" data-section="accordion">
+		 			<section>
+			 			<h3 class="title" data-section-title><a href="#"><img src="img/m_Francesc.jpg" /><span>Francesc Sànchez</span></a></h3>
+			 			<div class="content" data-section-content>
+				 			<p>Geògraf, llicenciat en Filosofia i Lletres, Secció de Geografia per la Universitat Autònoma de Barcelona l’any 1993. Amb més de 20 anys d’experiència en Sistemes d’Informació Geogràfica. Té una amplia experiència en bases de dades geogràfiques, i en disseny cartogràfic per la seva tasca com a tècnic en l’Institut Cartogràfic de Catalunya, durant un periode de 16 anys, on ha format part de diferents grups de treball: Base Cartogràfica 50000, Base Municipal de Catalunya, Conques Hidrogràfiques, Xarxa de Carreteres de Catalunya, entre d’altres.</p><p>Ha participat com formador i analista de projectes en el projecte de recuperació i formació dels “Centres d’Integració de Telecomunicacions Avançades” (CITA). Projecte promogut per diversos departaments de la Generalitat de Catalunya i el Laboratori d’Informació Geogràfica i Territorial (LIGIT) del Departament de Geografia de la UAB. Tasca amb la cual, amb el grup del CITA del Consell Comarcal del Bages, van aconseguir: “Premi Fundació Caixa Manresa” amb l’estudi: “Planificació territorial i organització de la lluita contra els incendis forestals al Bages”, Rufí Cerdan (dir.) A. Badia, I. Ferrero, J.C. Llurdés, F. Sánchez, D. Saurí (1999). Premi Fundació Caixa Manresa.</p><p>En l’actualitat, porta a terme el seu desenvolupament professional en solitari, i forma part del GTSIG “Grup de Treball de SIG” del Col·legi de Geògrafs de Catalunya.</p>
+				 		</div>
+				 	</section>
+	 			</div>
+	 		</div>
+	 	
+	 	</div>
+	 	
+	 	<div class="row">
+	 		 		
+<!-- Fitxa 3 -->
+			<div class="small-12 large-6 columns"> 		
+	 			<div class="section-container accordion" data-section="accordion">
+		 			<section>
+			 			<h3 class="title" data-section-title><a href="#"><img src="img/m_Arnau.jpg" /><span>Arnau Boix</span></a></h3>
+			 			<div class="content" data-section-content>
+				 			<p>Arnau Boix és arquitecte per la UPV (Universitat Politècnica de València). Inicia el seu treball com arquitecte a la Fundació CEDAT de València, realitzant tasques relacionades amb l’accessibilitat arquitectònica dels Plans municipals integrals d’accessibilitat, i és al voltant de l’ampliació del concepte del disseny per a tothom, que realitza el treball de tesi del Màster en Disseny d’Interiors a la UPC (Universitat Politècnica de Catalunya).</p><p>Posteriorment, desenvolupa la seva pràctica professional en la redacció de plans d’accessibilitat urbana a Catalunya. Com a consultor especialista en accessibilitat i disseny per tothom col·labora amb diferents estudis: Ciudades para Todos, ProAsolutions, Design for All Foundation i Enrique Rovira-Beleta, entre d’altres.</p><p>Al 2009 funda el seu propi estudi: <a href="http://www.microgaia.org">www.microgaia.org</a>, on desenvolupa projectes d’edificació i espais públics. Sense abandonar la seva vessant més acadèmica, segueix exercint l’activitat docent com especialista en temes de participació i disseny inclusiu, en diferents universitats del País Valencià i Catalunya.</p><p>Actualment, s’hi ha de sumar la realització de projectes de cooperació internacional al Nepal, relatius al desenvolupament sostenible a comunitats rurals.</p>
+				 		</div>
+				 	</section>
+	 			</div>
+			</div>
+<!-- Fitxa 4 -->
+			<div class="small-12 large-6 columns"> 		
+	 			<div class="section-container accordion" data-section="accordion">
+		 			<section>
+			 			<h3 class="title" data-section-title><a href="#"><img src="img/m_Pau.jpg" /><span>Pau Guerrero</span></a></h3>
+			 			<div class="content" data-section-content>
+				 			<p>Arquitecte i fotògraf.
+
+Amb una amplia experiencia com a fotògraf d'arquitectura i paisatge. Ha treballat com a fotògraf d'arquitectura per a l'Institut Balear d'Infraestructures i Serveis Educatius realitzant les fotografies per a la publicació "10 anys de construccions educatives a les Illes Balears 1998/2007".
+Les seves fotografies han estat publicades a:
+
+	⁃	Ciudades i Contaminación. Ed. Planeta
+	⁃	Espais Metropolitans 2005-2008. Ed MMAMB
+	⁃	Espacios Públicos - Parques Urbanos. Ed. Links
+	⁃	Alvaro Siza a la Universitat de Lleida. Ed. UdL
+	⁃	ACXT Obras y Proyectos. TF Editores
+	⁃	Espais Metropolitans 2000-2004. Ed MMAMB
+	⁃	Landscape Design Today. Ed Links
+	⁃	Habitatge Protegit Metropolità 1995-2003
+	⁃	Els Metros del Món. Ed. UPC
+
+Han exposat les seves fotografies a Europa i als Estats Units.
+
+Actualment exposa el seu treball sobre el paisatge de l'aigua en moviment al Museu Municipal de Tossa de Mar, i elabora una investigació sobre la relació entre el paisatge del Ripollés i el mite del comte Arnau.
+</p>
+				 		</div>
+				 	</section>
+	 			</div>
+	 		</div>
+	 	
+	 	</div>
+	 </div>
+</section>
+
+<!-- AMICS -->
+
+<section id="amics">
+	<div class="titol">
+		<div class="row">
+	 		<div class="large-12 columns">
+	 			<h2>Amics de l'ICR</h2>
+	 		</div>
+	 	</div>
+	 	<div class="tick"></div>
+	</div>
+	<div class="row">
+		<div class="large-12 columns text_1">
+	 		<p>Si vols ser amic o amiga de l'Institut Cartogràfic de la ReVolta, deixa'ns les teves dades de contacte, i et mantindrem informat de totes les activitats de l'ICR.</p><p>Estem en procés de desenvolupament del web, i encara pot passar un temps fins que tinguis noticies nostres.</p><p>Gràcies pel teu interès!</p>
+		</div>
+	</div>
+<!-- CONTACT FORM -->
+	<div class="row">
+		<div class="large-7 columns large-centered">
+			<div class="contact_form">  
+				<div id="note"></div>
+				<div id="fields">
+					<form id="ajax-contact-form" action="">
+						<div class="grid_6">
+							<input type="text" name="name" value="" placeholder="Nom" />
+						<!--<input type="text" name="subject" value="" placeholder="Phone" />-->
+							<input type="text" name="email" value="" placeholder="Email" />
+						</div>
+						<div class="grid_6 omega"><textarea name="message" id="message" placeholder="Missatge"></textarea></div>
+						<div class="clear"></div>
+						<input type="reset" class="contact_btn" value="Elimina" />
+						<input type="submit" class="contact_btn send_btn" value="Envia" />
+						<div class="clear"></div>
+					</form>
+<!-- END FORM -->
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- FOOTER -->
+
+<footer>
+<div class="row">
+<div class="large-12 columns">
+	<p>Institut Cartogràfic de la ReVolta 2013</p>
+	<div class="social">
+	<p><a href="#" class="webicon svg facebook small">Like us on Facebook</a>
+	<a href="#" class="webicon svg googleplus small">Like us on Facebook</a>
+	<a href="#" class="webicon svg flickr small">Like us on Facebook</a>
+	<a href="#" class="webicon svg twitter small">Like us on Facebook</a></p>
+	</div>
+</div>
+</div>
+</footer>
+	 
+<!-- SCRIPTS ---------------------->
+	<script>
+  document.write('<script src=' +
+  ('__proto__' in {} ? 'js/vendor/zepto' : 'js/vendor/jquery') +
+  '.js><\/script>')
+  </script>
+  
+  <script src="js/foundation.min.js"></script>
+  <!--
+  
+  <script src="js/foundation/foundation.js"></script>
+  
+  <script src="js/foundation/foundation.placeholder.js"></script>
+  
+  <script src="js/foundation/foundation.section.js"></script>
+  
+  -->
+  
+  <script>
+    $(document).foundation();
+  </script>
+<!-- END OF SCRIPTS ---------------------->
+	</body>
+</html>

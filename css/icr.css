@@ -1,0 +1,307 @@
+
+body {
+	font-family: 'Raleway', sans-serif;
+	font-weight: 400;
+	line-height: 1.6875;
+	height: 100%;
+}
+
+html {
+	height: 100%;
+}
+
+a {
+	text-decoration: none;
+	color: #DF5A49;
+}
+
+a:hover {
+	color: #45B29D;
+}
+
+a:visited {
+	color: #1CB8C2;
+}
+
+.background {
+	background: url(../img/carto_4_1400x900px.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+#portada {
+	background-color: rgba(215, 207, 188, 0.6);
+	width: 100%;
+	height: 100%;
+}
+
+#portada h1 {
+	width: 100%;
+	padding: 5em 0;
+	margin: 0;
+	color: #3E3630;
+	text-align: center;
+	font-weight: 100;
+	font-size: 4em;
+}
+
+#contingut {
+	background-color: #3E3630;
+}
+
+/* .titol es la capçalera de les seccions */
+
+@media only screen {
+
+	.titol {
+		background-color: #3E3630;
+		height: 10em;
+		position: relative;
+		padding: 1em 0;
+		margin-left: 60px;
+
+		}
+
+	.titol h2 {
+		text-transform: uppercase;
+		color: #D7CFBC;
+		font-size: 1.4em;
+		}
+}
+
+@media only screen and (min-width: 600px) {
+	.titol {
+		background-color: #3E3630;
+		height: 16em;
+		position: relative;
+		padding: 1em 4.2em;
+		}
+
+	.titol h2 {
+		text-transform: uppercase;
+		font-weight: 100;
+		color: #D7CFBC;
+		font-size: 2.8em;
+		}
+}
+
+#logo {
+	z-index: 1000;
+ 	background-image: url(../img/logoweb2.png);
+	background-repeat: no-repeat;
+/*	background-color: #f245f9; */
+	background-size: 60px 96px;
+	bottom: 200px;
+	width: 60px;
+	height: 96px;
+	float:left;
+
+}
+
+
+.tick {
+	background: transparent url(../img/bg_arrow_2.svg) 0 0 no-repeat;
+	background-size: 140px 35px;
+	width: 140px;
+	height: 35px;
+	bottom: -35px;
+	left: 50%;
+	margin-left: -70px;
+	position: absolute;
+	z-index: 1000;
+}
+
+.fons_1 {
+	background-image: url(../img/fons_1440x798.jpg);
+}
+
+/* text_1 es l'apartat manifest i amics, modificant l'espai blanc al costat per monitors menys 600px */
+
+.text_1 {
+	font-family: 'Lora', Georgia, Times, serif;
+	}
+	
+@media only screen {
+	.text_1 {
+		text-align: justify;
+		padding: 4em 1em;
+		}
+}
+
+@media only screen and (min-width: 600px) {
+	.text_1 {
+		font-size: 1.1em;
+		text-align: justify;
+		padding: 4em 4.2em;
+		}
+}
+
+.fons_2 {
+	background-image: url(../img/fons_cnivell.jpg);
+	padding-top: 4em;
+}
+
+.text_2 {
+	text-align: justify;
+	font-family: 'Lora', Georgia, Times, serif;
+}
+
+/* text_2 es l'apartat planol modificant l'espai blanc al costat per monitors menys 600px */
+
+@media only screen {
+	.text_2 {
+		padding: 1em 1em; }
+}
+
+@media only screen and (min-width: 600px) {
+	.text_2 {
+		font-size: 1.1em;
+		padding: 4em 4.2em; }
+}
+
+ .text_2 img {
+ 	display: block;
+ 	margin: 0 auto;
+	padding-bottom: 2em;
+}
+
+/*text_3 es l'apartat cartògrafs. modificant l'espai blanc al costat per monitors menys 600px */
+
+.text_3 {
+	font-family: 'Lora', Georgia, Times, serif;
+	}
+	
+@media only screen {
+	.text_3 {
+		padding: 4em 0; }
+}
+
+@media only screen and (min-width: 600px) and {
+	.text_3 {
+		padding: 4em 4.2em; }
+}
+
+/* modificant acordió */
+
+
+@media only screen {
+	.title {
+		font-size: 1em; }
+}
+
+@media only screen and (min-width: 600px) {
+	.title {
+		font-size: 1.2em; }
+}
+
+.title {
+	font-weight: 200;
+}
+
+.title span {
+	display: inline;
+	vertical-align: bottom;
+	padding-left: 1em;
+	}
+
+.section-container.accordion {
+  border-top: 0px solid #cccccc;
+  }
+
+.section-container.accordion > section > .title, .section-container.accordion > .section > .title {
+/*    background-color: #efefef; */
+	background-color: #D7CFBC;
+    border: solid 0px #cccccc;
+    }
+
+.section-container.accordion > section > .title:hover, .section-container.accordion > .section > .title:hover {
+ /* background-color: #e2e2e2;    */
+ 	background-color: #C0B099;
+     }
+
+.section-container.accordion > section.active > .title, .section-container.accordion > .section.active > .title {
+    background: #C0B099; }
+
+.content {
+	text-align: justify;
+	font-size: 0.8em;
+}
+
+/*----*/
+
+#amics {
+	
+}
+
+form {
+	padding-bottom: 3em;
+}
+
+footer {
+	background-color: #3E3630;
+	height: 10em;
+}
+
+footer p {
+	color: #D7CFBC;
+	padding-top: 2em;
+	text-align: center;
+}
+
+.social p {
+	padding-top: 0;
+}
+
+/* webicons */
+
+.webicon {
+  display: inline-block;
+  background-size: 100%;
+  width: 30px;
+  height: 30px;
+  text-indent: -999em;
+  text-align: left;
+  -moz-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.5);
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.5);
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  margin-bottom: 5px; }
+
+.webicon:hover {
+  margin: -1px 0 1px;
+  -moz-box-shadow: 0 2px 0 rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 0 2px 0 rgba(0, 0, 0, 0.25);
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.25); }
+
+.webicon.small {
+  width: 20px;
+  height: 20px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px; }
+
+.webicon.large {
+  width: 48px;
+  height: 48px;
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  border-radius: 6px; }
+
+.svg .webicon.facebook {
+  background: url("webicons/webicon-facebook.svg"); }
+  
+.svg .webicon.flickr {
+  background: url("webicons/webicon-flickr.svg"); }
+  
+.svg .webicon.googleplus {
+  background: url("webicons/webicon-googleplus.svg"); }
+
+.svg .webicon.twitter {
+  background: url("webicons/webicon-twitter.svg"); }
+  
